@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+  /*フォントの名前*/
+  font-family: "hira";
+  src: url("/font/ロゴたいぷゴシックCondense.woff2") format("woff2"),
+       url("/font/ロゴたいぷゴシックCondense.woff") format("woff");
+}
+h2,h3,h4,p{
+  font-family: "hira";
+    color:#AF7D71;
+}
+h2{margin:0 auto;}
+p{width:38vw;
+margin:0 auto;}
+
+body{
+    background-color: #F4F7EB;
+}
+
+section{
+    overflow: hidden;
+    width: 90vw;
+    display: flex;
+    flex-direction:column;
+    border-style: dashed;
+    border-radius: 20px;
+    border-color: #AF7D71;
+    margin:60px auto 0px;
+    padding-bottom: 30px;
+}
+
+section:last-child{
+    margin-bottom: 50px;
+}
+
+section.degital{
+ background:rgba(39,188,192,0.3);
+}
+
+section.film{
+ background:rgba(237,188,192,0.5);
+}
+
+nav{
+    width:100vw;
+}
+
+ul{
+    display:flex;
+}
+
+ul li{
+    list-style: none;
+    margin:10px auto;
+}
+
+img.navi{
+    width:180px;
+}
+
+#top{
+    display: flex;
+}
+#top img{
+    width:90vw;
+    margin:0 auto;
+}
+
+#toplogo{
+    display: flex;
+}
+#toplogo img{
+    width:50vw;
+    margin:50px auto 0;
+}
+
+
+.logo{
+    margin:20px auto 10px;
+}
+.logo img{
+    width:350px;
+}
+
+.contents{
+    display: flex;
+    margin:0px　auto;
+    justify-content: center;
+}
+
+/*choose*/
+.leftbox{
+    width:40vw;
+    height: auto;
+/*    background-color: #8BBCC0;*/
+    background:rgba(39,188,192,0.3);
+    border-style: dashed;
+    border-radius:20px;
+    border-color:#29ABE2;
+    margin-right:40px;
+}
+
+.rightbox{
+    width:40vw;
+    height: auto;
+/*    background-color: #EDBCC0;*/
+    background:rgba(237,188,192,0.5);
+    border-style: dashed;
+    border-radius:20px;
+    border-color:#FF7BAC;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.chooselogo{
+    width:auto;
+    height: 5vh;
+    margin: 0 auto;
+}
+
+.chooseimg{
+    width:35vw;
+    height:auto;
+    margin: auto;
+}
+
+/*function*/
+.up{
+    margin:0 auto 10px;
+}
+
+.function_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0px 10px 30px;
+}
+
+.imagebox img{
+    width:20vw;
+    height:auto;
+}
+.swiper-slide{
+    margin:auto;
+    width:80vw;
+}
+
+/*degitalページ用*/
+
+.degital .contents{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.uppercontents{
+    display: flex;
+    margin: auto;
+}
+.smallcontents{
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+}
+.smallcontents img{
+    width:auto;
+    height: 10vh;
+    margin: 0 auto;
+}
+.smallcontents p{
+    font-size: 20px;
+    line-height:30px;
+    width:35vw;
+    margin-top: 15px;;
+    padding:20px;
+    background:rgba(237,245,236,0.6);
+    border-radius: 10px;
+}
+
+.bottomcontents{
+    padding-top: 10px;
+    display:flex;
+    flex-direction:column;
+    margin:auto;
+}
+
+.bottomcontents img{
+    width:auto;
+    height:10vh;
+    margin:auto;
+}
+
+.recontents{
+    display:flex;
+    width:80vw;
+    margin-top: 15px;;
+    padding:20px;
+    background:rgba(237,245,236,0.4);
+    border-radius: 10px;
+}
+.recontents img{
+    height:150px;
+}
+h3{
+    font-size: 20px;
+}
+.recontents p{
+    padding-top: 15px;
+    color:#3D7390;
+}
+
+/*Filmページ用*/
+.film .contents{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.film .recontents p{
+    color:#E1809D;
+}
+
+
+

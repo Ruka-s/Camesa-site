@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+    <title>Camera_Life</title>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html#top">
+                    <img src="image/Top.png" class="navi" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="index.html#choose">
+                    <img src="image/Choose.png" alt="" class="navi">
+                </a>
+            </li>
+            <li>
+                <a href="index.html#function">
+                    <img src="image/Functions.png" alt="" class="navi">
+                </a>
+            </li>
+            <li>
+                <a href="index.html#garally">
+                    <img src="image/Garally.png" alt="" class="navi">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div id="top">
+        <img src="image/Topimage.png" alt="">
+    </div>
+
+</header>
+
+<body>
+    <section id="choose">
+        <div class="logo">
+            <img src="image/Choose_log.png" alt="">
+        </div>
+        <div class="contents">
+           <a href="degital.html">
+               <div class="leftbox">
+                <div class="box">
+                    <img src="image/Degital.png" alt="" class="chooselogo">
+                    <img src="image/Degital_photo.JPG" alt="" class="chooseimg">
+                </div>
+            </div>
+           </a>
+            <a href="film.html">
+                <div class="rightbox">
+                <div class="box">
+                    <img src="image/Film.png" alt="" class="chooselogo">
+                    <img src="image/Film_photo.jpeg" alt="" class="chooseimg">
+                </div>
+            </div>
+            </a>
+            
+        </div>
+    </section>
+    <section id="function">
+        <div class="logo">
+            <img src="image/Functions_log.png" alt="">
+        </div>
+        <div class="contents">
+            <div class="up">
+                <div class="function_box">
+                    <h2>シャッタースピード</h2>
+                    <div class="imagebox"><img src="image/shutter1.JPG" alt="">
+                        <img src="image/shutter2.JPG" alt="">
+                    </div>
+                    <p>シャッタースピードを速くする、水滴の飛び散る瞬間やジャンプなどの一瞬の出来事が写真に収められます！逆にシャッタースピードを遅くすると右の写真のような動きのある写真が撮れます。<br>
+                        シャッタースピードが変更できるのはスマホのカメラとの大きな違いではないでしょうか？</p>
+                </div>
+                <div class="function_box">
+                    <h2>iso感度</h2>
+                    <div class="imagebox"><img src="image/kurai.JPG" alt="">
+                        <img src="image/akarui.JPG" alt="">
+                    </div>
+                    <p>iso感度とはどれだけ光に反応しやすいかを示したもの。数値が低いと写真は暗く、数値が高いと写真は明るくなります。<br>シャッタースピードやF値で写真の写りを決めたらiso感度を変更して適切な明るさに変更してあげましょう。</p>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="function_box">
+                    <h2>F値</h2>
+                    <div class="imagebox"><img src="image/F_small.JPG" alt="">
+                        <img src="image/F_big.JPG" alt="">
+                    </div>
+                    <p>F値とは絞り値です。F値が低いほど写りは明るく、また背景がボケるようになります。よくカメラっぽい写真と言われるのはF値の低いものが多いです<br>低いF値が出せるレンズは高価になりがちという特徴もあります。F2~3が出せるレンズを1つ持っているとカメラが楽しくなれる気がします！
+                    </p>
+                </div>
+                <div class="function_box">
+                    <h2>センサーサイズ</h2>
+                    <div class="imagebox"><img src="image/Default.JPG" alt="">
+                        <img src="image/Triming.png" alt="">
+                    </div>
+                    <p>センサーサイズだけはカメラを買う前に気にしなくてはいけない項目です。
+                        センサーサイズには何種類かありますが主なものとしてはフルサイズ>APSC>フォーサーズ>スマホ　となっています。<br>同じレンズでもセンサーサイズが大きいとより広い画角で撮影することが可能になります。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="garally">
+        <div class="logo">
+            <img src="image/Garally_log.png" alt="">
+        </div>
+        <div class="contents">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="/image/img01.JPG" alt="" class="grallyphoto">
+                    </div>
+                    <div class="swiper-slide"><img src="image/img02.JPG" alt="" class="grallyphoto"></div>
+                    <div class="swiper-slide"><img src="image/img03.JPG" alt="" class="grallyphoto"></div>
+                    <div class="swiper-slide"><img src="image/img04.JPG" alt="" class="grallyphoto"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            effect: "fade",
+            loop: true,
+            slidesPerView: 2,
+            spaceBetween: 10,
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+        })
+    </script>
+</body></html>
