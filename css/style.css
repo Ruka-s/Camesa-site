@@ -147,9 +147,14 @@ img.navi{
     width:20vw;
     height:auto;
 }
+/*garally*/
+
 .swiper-slide{
     margin:auto;
-    width:80vw;
+}
+.swiper-slide img{
+    margin:0 10%;
+    width:80%;
 }
 
 /*degitalページ用*/
