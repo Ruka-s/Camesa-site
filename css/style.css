@@ -68,6 +68,7 @@ img.navi{
 }
 #top img{
     width:90vw;
+    height:auto;
     margin:0 auto;
 }
 
@@ -176,13 +177,15 @@ h2{
     justify-content: center;
 }
 .uppercontents{
+    width:80vw;
     display: flex;
     margin: auto;
+    justify-content: space-between;
 }
 .smallcontents{
     display:flex;
     flex-direction: column;
-    margin:10px;
+    width:39vw;
 }
 .smallcontents img{
     width:auto;
@@ -198,6 +201,7 @@ h2{
     background:rgba(237,245,236,0.6);
     border-radius: 10px;
 }
+
 
 .bottomcontents{
     padding-top: 10px;
@@ -227,6 +231,7 @@ h3{
     font-size: 20px;
 }
 .recontents p{
+    font-size:20px;
     padding-top: 15px;
     color:#3D7390;
 }
