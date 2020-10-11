@@ -272,7 +272,7 @@ margin:0 auto;}
 .recontents{
     display:flex;
     width:80vw;
-    margin-top: 15px;;
+    margin-top:15px;
     padding:20px;
     background:rgba(237,245,236,0.4);
     border-radius: 10px;
@@ -287,6 +287,9 @@ h3{
     font-size:20px;
     padding-top: 15px;
     color:#3D7390;
+}
+.topbutton{
+    display:none;
 }
 
 @media screen and (max-width:479px){
@@ -322,7 +325,13 @@ h3{
     padding-top: 15px;
     color:#3D7390;
 }
-    
+    .topbutton{
+        display:inline;
+    }
+    .topbutton img{
+        width: 90vw;
+        margin: 30px 5vw ;
+    }
 }
 
 
