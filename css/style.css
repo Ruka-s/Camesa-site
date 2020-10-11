@@ -11,8 +11,10 @@
 h1{
     font-family: 'Crimson Text', serif;
     color:#AF7D71;
-    
+    font-size: 30px;
+    margin: 0 auto 10px;
 }
+
 h2,h3,h4,p{
   font-family: "hira";
     color:#AF7D71;
@@ -23,6 +25,9 @@ margin:0 auto;}
 
 body{
     background-color: #F4F7EB;
+}
+a{
+    text-decoration: none;
 }
 
 section{
@@ -45,10 +50,19 @@ section.degital{
 section.film{
  background:rgba(237,188,192,0.5);
 }
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 nav{
     width:100vw;
 }
+.menu,.scroll{
+    display:none;
+}
+
 
 ul{
     display:flex;
@@ -59,26 +73,40 @@ ul li{
     margin:10px auto;
 }
 
+
 img.navi{
     width:180px;
 }
 
-#top{
-    display: flex;
-}
 #top img{
     width:90vw;
-    height:auto;
-    margin:0 auto;
+    margin:auto;
 }
 
-#toplogo{
-    display: flex;
+
+@media screen and (max-width:479px){
+    nav{
+        display: none;
+    }
+    .menu,.scroll{
+        display:flex;
+        flex-direction: column;
+        margin:30px auto;
+    }
+    .menu img{
+        width:20vw;
+    }
+    .scroll{
+        width:60vw;
+        margin-top: 40px;
+        padding-bottom: 20px;
+    }
+    .arrow{
+        height:40vh;
+        margin:auto;
+    }
 }
-#toplogo img{
-    width:50vw;
-    margin:50px auto 0;
-}
+
 
 
 .logo{
@@ -91,7 +119,7 @@ img.navi{
 .contents{
     display: flex;
     margin:0px　auto;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 /*choose*/
@@ -119,26 +147,29 @@ img.navi{
 .box{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 3vw;
 }
-a{
-    text-decoration: none;
-}
-h1{
-    font-size: 30px;
-    margin: 0 auto 10px;
-}
-
 .chooseimg{
     width:35vw;
     height:auto;
     margin: auto;
 }
 
-/*function*/
-.up{
-    margin:0 auto 10px;
+@media screen and (max-width:479px){
+    .logo img{
+    width:80vw;
 }
+    .leftbox{
+        margin:auto;
+    }
+    h1{
+    font-size: 20px;
+    margin: 0 auto 10px;
+}
+}
+
+/*function*/
+
 h2{
     margin-bottom: 15px;
 }
@@ -153,6 +184,21 @@ h2{
 .imagebox img{
     width:20vw;
     height:auto;
+}
+@media screen and (max-width:479px){
+    .function{
+        display:flex;
+        flex-direction: column;
+    }
+    .imagebox{
+        text-align: center;
+    }
+    .imagebox img{
+        width:40vw;
+        height:auto;
+    }
+    p{width:85vw;
+margin:0 auto;}
 }
 /*garally*/
 #garally{
@@ -170,6 +216,12 @@ h2{
 	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23AF7D71'%2F%3E%3C%2Fsvg%3E");
 }
 /*degitalページ用*/
+@media screen and (max-width:479px){
+#toplogo img{
+    width:95vw;
+    margin:20px auto;
+}  
+}
 
 .degital .contents{
     display:flex;
@@ -185,18 +237,19 @@ h2{
 .smallcontents{
     display:flex;
     flex-direction: column;
-    width:39vw;
+    width:38vw;
 }
+
 .smallcontents img{
     width:auto;
     height: 10vh;
-    margin: 0 auto;
+    margin:auto;
 }
 .smallcontents p{
     font-size: 20px;
     line-height:30px;
     width:35vw;
-    margin-top: 15px;;
+    margin-top:15px;
     padding:20px;
     background:rgba(237,245,236,0.6);
     border-radius: 10px;
@@ -225,7 +278,7 @@ h2{
     border-radius: 10px;
 }
 .recontents img{
-    height:150px;
+    height:20vh;
 }
 h3{
     font-size: 20px;
@@ -235,6 +288,43 @@ h3{
     padding-top: 15px;
     color:#3D7390;
 }
+
+@media screen and (max-width:479px){
+    .uppercontents{
+    flex-direction: column;
+        justify-content: center;
+}
+    .smallcontents{
+        width:80vw;
+    }
+    .smallcontents img{
+    height: 10vh;
+        width:auto;
+        margin:10px auto;
+}
+    .smallcontents p{
+        width:70vw;
+    }
+    .bottomcontents img{
+    width:70vw;
+    height:auto;
+    }
+    .recontents{
+        padding:10px;
+        width:85vw;
+    }
+    .recontents img{
+        width:30vw;
+    }
+    .recontents p{
+        width:50vw;
+    font-size:10px;
+    padding-top: 15px;
+    color:#3D7390;
+}
+    
+}
+
 
 /*Filmページ用*/
 .film .contents{
