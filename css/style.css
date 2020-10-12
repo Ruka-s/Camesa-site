@@ -66,7 +66,11 @@ nav{
 
 ul{
     display:flex;
+    justify-content: center;
 }
+ul .up, ul .bottom{
+        display: flex;
+    }
 
 ul li{
     list-style: none;
@@ -88,14 +92,39 @@ img.navi{
     nav{
         display: none;
     }
-    .menu,.scroll{
+    #top img{
+    width:95vw;
+    margin-top:70px;
+}
+    
+/*
+    nav{
+        width:90vw;
+        margin:auto;
+    }
+    ul{
+        flex-direction: column;
+    }
+    li{
+        margin:5px;
+    }
+    li .navi{
+        width:37vw;
+    }
+    .menu{
         display:flex;
         flex-direction: column;
         margin:30px auto;
     }
     .menu img{
         width:20vw;
+    }*/
+    .scroll{
+        display:flex;
+        flex-direction: column;
+        margin:30px auto;
     }
+    
     .scroll{
         width:60vw;
         margin-top: 40px;
