@@ -216,8 +216,11 @@ p{
         width:40vw;
         height:auto;
     }
-    p{width:85vw;
-margin:0 auto;}
+    .function_box p{
+        width:85vw;
+margin:0 auto;
+        padding-bottom: 30px;
+    }
 }
 /*garally*/
 #garally{
