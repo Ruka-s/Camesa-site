@@ -63,7 +63,8 @@ header{
 }
 
 nav{
-    width:100vw;
+    width:90vw;
+    margin:auto;
 }
 .menu,.scroll{
     display:none;
@@ -73,8 +74,10 @@ nav{
 ul{
     display:flex;
     justify-content: center;
+    
 }
 ul .up, ul .bottom{
+    width:45vw;
         display: flex;
     }
 
@@ -197,6 +200,10 @@ h2{
     width:20vw;
     height:auto;
 }
+p{
+    height:20vh;
+}
+
 @media screen and (max-width:479px){
     .function{
         display:flex;
