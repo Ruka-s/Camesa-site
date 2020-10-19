@@ -9,7 +9,17 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Camera_Life</title>
 </head>
-<header>
+
+<body>
+  <div id="is-loading">
+ <div id="loading">
+  <img src="image/Preloader_2.gif" alt="loadingなう" />
+ </div>
+</div>
+
+<div id="loading__wrapper">
+    
+   <header>
     
     <button class="menu">
         <img src="image/Menu.png" alt="">
@@ -53,8 +63,6 @@
     </div>
     
 </header>
-
-<body>
     <section id="choose">
         <div class="logo">
             <img src="image/Choose_log.png" alt="">
@@ -125,7 +133,6 @@
             </div>
         </div>
     </section>
-
     <section id="garally">
         <div class="logo">
             <img src="image/Garally_log.png" alt="">
@@ -149,11 +156,8 @@
                 <div class="swiper-button-next"></div>
             </div>
         </div>
-
-
-
     </section>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
     <script>
         var mySwiper = new Swiper('.swiper-container', {
@@ -166,4 +170,34 @@
             prevButton: '.swiper-button-prev',
         })
     </script>
+    </div>
+    
+<!--    <script src="/js/jquery-2.1.1.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+ $(function() {
+ var h = $(window).height();
+  $('#loading__wrapper').css('display','none');
+  $('#is-loading ,#loading').height(h).css('display','block');
+ });
+
+ $(window).load(function () {
+  $('#is-loading').delay(900).fadeOut(800);
+  $('#loading').delay(600).fadeOut(300);
+  $('#loading__wrapper').css('display', 'block');
+ });
+
+
+ $(function(){
+  setTimeout('stopload()',10000);
+  });
+
+  function stopload(){
+   $('#loading__wrapper').css('display','block');
+   $('#is-loading').delay(900).fadeOut(800);
+   $('#loading').delay(600).fadeOut(300);
+ }
+</script>
+
+
 </body></html>
